@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "cfh",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "ColorfulHeads-Fabric",
+  "description": "Wow! Beautiful heads!",
   "authors": [
-    "Me!"
+    "Taskeren"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://taske.ren",
+    "sources": "https://github.com/nitu2003/ColorfulHeads-Fabric",
+    "issues": "https://github.com/nitu2003/ColorfulHeads-Fabric/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/cfh/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "cn.glycol.cfh.CFH"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
