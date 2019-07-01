@@ -24,6 +24,10 @@ public class SkullTabsFabric {
 		
 	}
 	
+	private static void create(String name, ItemStack icon) {
+		create(name, icon, name);
+	}
+	
 	/**
 	 * To load the native tabs and DataManager.
 	 */
@@ -31,16 +35,16 @@ public class SkullTabsFabric {
 		
 		DataManager.defaults();
 		
-		create("custom", new ItemStack(Items.APPLE), "custom");
-		create("colors", new ItemStack(Items.BONE_MEAL), "colors");
-		create("blocks", new ItemStack(Blocks.BRICKS), "blocks");
-		create("interior", new ItemStack(Items.FLOWER_POT), "interior");
-		create("misc", new ItemStack(Items.LAVA_BUCKET), "misc");
-		create("animals", new ItemStack(Items.TROPICAL_FISH), "animals");
-		create("foods", new ItemStack(Items.BREAD), "foods");
-		create("seasonal", new ItemStack(Blocks.BEACON), "seasonal");
-		create("letters", new ItemStack(Items.LIGHT_BLUE_BANNER), "letters");
-		create("mobs", new ItemStack(Items.SKELETON_SKULL), "mobs");
+		create("custom",   new ItemStack(Items.APPLE));
+		create("colors",   new ItemStack(Items.BONE_MEAL));
+		create("blocks",   new ItemStack(Blocks.BRICKS));
+		create("interior", new ItemStack(Items.FLOWER_POT));
+		create("misc",     new ItemStack(Items.LAVA_BUCKET));
+		create("animals",  new ItemStack(Items.TROPICAL_FISH));
+		create("foods",    new ItemStack(Items.BREAD));
+		create("seasonal", new ItemStack(Blocks.BEACON));
+		create("letters",  new ItemStack(Items.LIGHT_BLUE_BANNER));
+		create("mobs",     new ItemStack(Items.SKELETON_SKULL));
 		
 	}
 	

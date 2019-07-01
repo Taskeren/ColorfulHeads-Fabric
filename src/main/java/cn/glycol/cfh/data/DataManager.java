@@ -30,28 +30,20 @@ public class DataManager {
 	 * 预加载原版设定
 	 */
 	public static void defaults() {
-		
-		File custom = getFile("custom");
-		File colors = getFile("colors");
-		File blocks = getFile("blocks");
-		File interior = getFile("interior");
-		File misc = getFile("misc");
-		File animals = getFile("animals");
-		File foods = getFile("foods");
-		File seasonal = getFile("seasonal");
-		File letters = getFile("letters");
-		File mobs = getFile("mobs");
-		
-		withDefVal(custom, DEF_CUSTOM);
-		withDefVal(colors, DEF_COLORS);
-		withDefVal(blocks, DEF_BLOCKS);
-		withDefVal(interior, DEF_INTERIOR);
-		withDefVal(misc, DEF_MISC);
-		withDefVal(animals, DEF_ANIMALS);
-		withDefVal(foods, DEF_FOODS);
-		withDefVal(seasonal, DEF_SEASONAL);
-		withDefVal(letters, DEF_LETTERS);
-		withDefVal(mobs, DEF_MOBS);
+		withDefVal("custom",   DEF_CUSTOM);
+		withDefVal("colors",   DEF_COLORS);
+		withDefVal("blocks",   DEF_BLOCKS);
+		withDefVal("interior", DEF_INTERIOR);
+		withDefVal("misc",     DEF_MISC);
+		withDefVal("animals",  DEF_ANIMALS);
+		withDefVal("foods",    DEF_FOODS);
+		withDefVal("seasonal", DEF_SEASONAL);
+		withDefVal("letters",  DEF_LETTERS);
+		withDefVal("mobs",     DEF_MOBS);
+	}
+	
+	private static void withDefVal(String name, String...defVal) {
+		withDefVal(getFile(name), defVal);
 	}
 	
 	/**
